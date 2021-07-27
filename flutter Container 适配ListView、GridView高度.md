@@ -1,3 +1,7 @@
+ListView 或者 GridView的不可滚动+自适应高度 
+ 1. shrinkWrap:true,
+ 2. physics: NeverScrollableScrollPhysics()
+
 ```dart
   Container(
     width: MediaQuery.of(context).size.width - 24,
@@ -7,7 +11,6 @@
       physics: NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        // mainAxisSpacing: 4.0,
         crossAxisSpacing: 11.0,
         childAspectRatio: 170.0/274.0
       ),  
